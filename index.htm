@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mamour</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css">
+    <title>mxr.codes</title>
 </head>
 <body>
+    <nav id="desktop-nav">
+        <div class="logo">mxr.codes</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">mxr.codes</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="/images/mypfp.png" alt="profile-pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mamour Dieng</h1>
+            <p class="section__text__p2">I'm a computer science student👨🏾‍💻</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="">
+                    CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    📬 Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="images/icons/linkedin.png" 
+                alt="My linkedin profile" class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/mamour-dieng-394237261/'"/>
+                <img 
+                src="images/icons/instagram.png" 
+                alt="My instagram profile" class="icon" 
+                onclick="location.href='https://instagram.com/mxr.codes'"/>
+                <img 
+                src="images/icons/github.png" 
+                alt="My github profile" class="icon" 
+                onclick="location.href='https://github.com'"/>
+                <img 
+                src="images/icons/discord.png" 
+                alt="My discord server" class="icon" 
+                onclick="location.href='https://discord.com'"/>
+            </div>
+        </div>
+    </section>
+
     
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
