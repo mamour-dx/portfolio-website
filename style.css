@@ -42,10 +42,10 @@ a {
     text-decoration-color: white;
 }
 a:hover {
-    color: grey;
+    color:rgb(65, 122, 123);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: rgb(65, 122, 123);
 }
 .logo {
     font-size: 2rem;
@@ -131,6 +131,7 @@ section {
     display: flex;
 }
 /* PROFILE SECTION*/
+
 #profile {
     display: flex;
     justify-content: center;
@@ -172,6 +173,10 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    transition: 400ms ease-in-out;
+}
+.icon:hover {
+    transform: scale(1.2);
 }
 /*BUTTONS*/
 .btn-container {
@@ -189,17 +194,140 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    border: #353535 0.1rem solid;
-    background: #EFEFEF ;
-}
-.btn-color-1:hover,
-.btn-color-2:hover {
-    cursor: pointer;
-    background: rgb(53, 53, 53);
-    color:white;
-    border: #fff 0.1rem solid;
-}
-.btn-container {
-    gap: 1rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+/* ABOUT SECTION */
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+.about-containers,
+.about-details-container {
+    display: flex;
+    align-items:right;
+}
+.about-pic {
+    border-radius: 2rem;
+}
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.details-container {
+    padding: 1.5rem;
+    background: white;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    transform: scale(0.9);
+}
+.section-container {
+    gap: 4rem;
+    height: 80%;
+    display: flex;
+}
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+/* WORK SECTION */
+#projects {
+    position: relative;
+}
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+/*CONTACT*/
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-info-upper-container {
+    display: flex;
+    border-radius: 2rem;
+    justify-content: center;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+.email-icon {
+    height: 2.5rem;
+}
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p {
+    text-align: center;
+}

@@ -13,8 +13,9 @@
         <div class="logo">mxr.codes</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -30,6 +31,7 @@
             <div class="menu-links">
                 <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -43,10 +45,10 @@
             <h1 class="title">Mamour Dieng</h1>
             <p class="section__text__p2">I'm a computer science student👨🏾‍💻</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="">
-                    CV
+                <button class="btn btn-color-2" onclick="location.href='#about'">
+                    About
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
                     📬 Contact
                 </button>
             </div>
@@ -62,18 +64,107 @@
                 <img 
                 src="images/icons/github.png" 
                 alt="My github profile" class="icon" 
-                onclick="location.href='https://github.com'"/>
+                onclick="location.href='https://github.com/mamour-dx'"/>
                 <img 
                 src="images/icons/discord.png" 
                 alt="My discord server" class="icon" 
-                onclick="location.href='https://discord.com'"/>
+                onclick="location.href='https://discord.gg/Q7MDwkQH3E'"/>
             </div>
         </div>
     </section>
-
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="/images/about-me-pic.png" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="/images/icons/experience.png" alt="" class="icon"/>
+                        <h3>Student</h3>
+                        <p>DUT 1<br>École Supérieure Polytechnique de Dakar</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="/images/icons/education.png" alt="" class="icon"/>
+                        <h3>Content creator</h3>
+                        <p>Part Time<br/>Instagram, YouTube and TikTok</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>L'aspect que j'aime le plus dans l'informatique c'est que ça  la créativité.
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <img src="/images/icons/arrow.png" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-containers">
+                <div class="article-container">
+                <img src="/images/CS50P.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title"><a title="What is wordle?" href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a> game using Python</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mamour-dx/python-wordle-game'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://certificates.cs50.io/f2751e08-4cd6-47ea-8532-13213b9c3344.pdf?size=letter'">Credentials</button>
+                </div>
+            </div>
+        
+            <div class="details-container color-containers">
+                <div class="article-container">
+                <img src="/images/today-i-learned.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Full-Stack React Application</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://todayilearned-mxr.netlify.app/', '_blank')">Live Demo</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.udemy.com/certificate/UC-bf97c656-c227-4767-9c8a-800f71873448/','_blank')">Credentials</button>
+                </div>
+            </div>
+            <div class="details-container color-containers">
+                <div class="article-container">
+                <img src="/images/still-building.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Stay tuned!</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/@mxr_codes'">YouTube</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://instagram.com/mxr.codes'">Instagram</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="/images/icons/arrow.png" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="/images/icons/email.png" alt="email" class="icon contact-icon email-icon">
+                <p><a href="mailto:contact@mxr.codes">contact@mxr.codes</a></p>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Mamour Dieng <br>All Rights Reserved<br>Built by me with <a href="https://www.youtube.com/@howtobecomeadeveloper" target="_blank">John Doe's Tutorial</a></p>
+    </footer>
     
-    
-
     <script src="script.js"></script>
 </body>
 </html>
