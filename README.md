@@ -6,9 +6,3 @@ The website is design by section:
 - about section
 - projects section
 - contact section
-
-I have one html file and two css files (one for normal styling and one for mediaqueries to adjust styling on small displays) and one folder to stock all images and icons that I used.
-
-
-
-
