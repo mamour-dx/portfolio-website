@@ -7,6 +7,10 @@
   section {
     margin: 0 6rem;
   }
+  
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -86,6 +90,11 @@
   .arrow {
     display: none;
   }
+  
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -126,6 +135,16 @@
 
   .text-container {
     text-align: justify;
+  }
+  
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+  
+  .project-image {
+    height: 220px;
   }
 }
 
@@ -190,6 +209,25 @@
 
   .footer-content {
     padding: 0 1rem;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 2rem auto 0;
+  }
+  
+  .project-image {
+    height: 240px;
+  }
+  
+  .tech-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  .project-card .btn-container {
+    flex-direction: row;
   }
 }
 

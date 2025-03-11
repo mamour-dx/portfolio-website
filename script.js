@@ -21,7 +21,7 @@ function toggleMenu() {
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop - 60) {
+      if (scrollY >= sectionTop - sectionHeight / 3) {
         current = section.getAttribute("id");
       }
     });
@@ -56,7 +56,7 @@ function toggleMenu() {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
       }
   
-      this.txtElement.innerHTML = this.txt;
+      this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
   
       let typeSpeed = 100;
   
@@ -153,6 +153,29 @@ function toggleMenu() {
       e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
+      });
+    });
+  });
+  
+  // Project Cards Animation
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        // Add a subtle tilt effect
+        this.style.transform = `translateY(-10px) rotate3d(${Math.random()}, ${Math.random()}, 0, 2deg)`;
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        // Reset transform
+        this.style.transform = '';
+      });
+      
+      // Animate tech tags on hover
+      const techTags = card.querySelectorAll('.tech-tag');
+      techTags.forEach((tag, index) => {
+        tag.style.transitionDelay = `${index * 50}ms`;
       });
     });
   });
