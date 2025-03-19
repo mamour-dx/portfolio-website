@@ -100,12 +100,8 @@ function toggleMenu() {
     } else if (currentTheme === "light") {
       setLightMode();
     } else {
-      // Check system preference
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setDarkMode();
-      } else {
-        setLightMode();
-      }
+      // Default to light mode
+      setLightMode();
     }
   }
   

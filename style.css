@@ -547,7 +547,7 @@ article .icon {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 3rem;
   max-width: 1400px;
   margin: 3rem auto 0;
@@ -586,7 +586,7 @@ article .icon {
 .project-image {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -606,8 +606,8 @@ article .icon {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) 60%, transparent);
-  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 70%, transparent);
+  padding: 1rem;
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -615,19 +615,20 @@ article .icon {
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
   margin-bottom: 0.5rem;
 }
 
 .tech-tag {
   background: var(--accent-color);
   color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.5rem;
-  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
   font-weight: 500;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .tech-tag:hover {
@@ -898,5 +899,69 @@ footer .nav-links a:hover {
   
   .technology-name {
     font-size: 0.8rem;
+  }
+}
+
+/* Add responsive styles for project cards */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-overlay {
+    padding: 0.8rem;
+  }
+
+  .tech-stack {
+    gap: 0.3rem;
+  }
+
+  .tech-tag {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-container {
+    gap: 1.5rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .tech-tag {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .project-card .btn-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-card .project-btn {
+    width: 100%;
   }
 }
